@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.accordion {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  margin: 50px auto; }
+
+ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0; }
+  ul li {
+    display: table-cell;
+    position: relative;
+    width: 100%/6%;
+    height: 500px;
+    vertical-align: bottom;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-transition: all 1000ms ease-in-out;
+    -o-transition: all 1000ms ease-in-out;
+    transition: all 1000ms ease-in-out; }
+    ul li div {
+      display: block;
+      overflow: hidden;
+      width: 100%; }
+      ul li div a {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 500px;
+        z-index: 3;
+        vertical-align: bottom;
+        padding: 0px 20px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        color: #fafafa;
+        text-decoration: none;
+        font-family: sans-serif;
+        -webkit-transition: all 200ms ease;
+        -o-transition: all 200ms ease;
+        transition: all 200ms ease; }
+        ul li div a * {
+          opacity: 0;
+          margin: 0;
+          -o-text-overflow: ellipsis;
+          text-overflow: ellipsis;
+          width: 100%;
+          z-index: 5;
+          position: relative;
+          overflow: hidden;
+          -webkit-transition: all 400ms ease;
+          -o-transition: all 400ms ease;
+          transition: all 400ms ease; }
+        ul li div a h1 {
+          font-size: 30px;
+          top: 430px;
+          text-transform: uppercase;
+          margin-bottom: 2px;
+          -o-text-overflow: ellipsis;
+          text-overflow: ellipsis;
+          font-family: sans-serif; }
+        ul li div a p {
+          top: 430px;
+          font-size: 15px;
+          -o-text-overflow: ellipsis;
+          text-overflow: ellipsis; }
+  ul li:nth-child(1) {
+    background-image: url(http://vlp.by/images/%D1%85%D0%BE%D1%80%D0%B2%D0%B0%D1%82%D0%B8%D1%8F_%D0%B2%D1%80%D1%81%D0%B0%D1%80.jpg); }
+  ul li:nth-child(2) {
+    background-image: url(https://www.tokkoro.com/picsup/5031584-nature-clouds-fog-mountains-hd-4k.jpg); }
+  ul li:nth-child(3) {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Sunrise_in_Tuticorin_beach.jpg); }
+  ul li:nth-child(4) {
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6dccf923-84d8-41fe-957b-46dedd724da1/d3dic1y-bf7e9190-4130-4316-b73b-c852490fd3e7.jpg/v1/fill/w_900,h_586,q_75,strp/trainstation_at_dawn_by_bdstudio_d3dic1y-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTg2IiwicGF0aCI6IlwvZlwvNmRjY2Y5MjMtODRkOC00MWZlLTk1N2ItNDZkZWRkNzI0ZGExXC9kM2RpYzF5LWJmN2U5MTkwLTQxMzAtNDMxNi1iNzNiLWM4NTI0OTBmZDNlNy5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.BkQE-l2m_gZgRqtR2gw6QiK1IaRz3P7AdS42gY3uA5o); }
+  ul li:nth-child(5) {
+    background-image: url(http://images.unsplash.com/photo-1531156992292-d36397ee9184?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9); }
+  ul li:nth-child(6) {
+    background-image: url(https://cdn.pixabay.com/photo/2019/01/03/13/48/beach-3910980_960_720.jpg); }
+  ul:hover li,
+  ul:focus-within li {
+    width: 8%; }
+  ul li:focus {
+    outline: none; }
+  ul:hover li:hover,
+  ul li:focus,
+  ul:focus-within li:focus {
+    width: 60%; }
+    ul:hover li:hover a,
+    ul li:focus a,
+    ul:focus-within li:focus a {
+      background: rgba(0, 0, 0, 0.4); }
+      ul:hover li:hover a *,
+      ul li:focus a *,
+      ul:focus-within li:focus a * {
+        opacity: 1;
+        background: none; }
